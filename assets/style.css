@@ -1,0 +1,965 @@
+/* Até linha 318 trata-se do arquivo dashboard_global.py
+/* Cabeçalho --> Aonde fica nosaa logo e o ícone de menu */
+#header{
+    height: 78px;
+    background-color: #5E60CE;
+    margin: 0;
+    width: 100vw;
+    min-width: 400px;
+}
+
+/* Escrita Fga Health Analytics */
+#header p{
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    color: #FCFCFC;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    padding-top: 25px;
+}
+
+/* Logo da nosso dashboard*/
+#header img
+{
+    width: 60px;
+    height: 55px;
+    display: inline-block;
+    padding: 12px 12px 12px 20px;
+    color: #FFFFFF;
+}
+
+/* Navbar */
+#navbar{
+    background-color: #5E60CE;
+    width: 100vw;
+    padding-bottom: 5px;
+}
+
+#navbar_global_selection, #navbar_local_selection, #navbar_referencias_selection, #navbar_sobre_nos_selection{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: large;
+}
+
+#navbar_global_selection:hover, #navbar_local_selection:hover, #navbar_referencias_selection:hover, #navbar_sobre_nos_selection:hover{
+    color: black;
+}
+
+#pop_up_global_message{
+    background-color: white;
+    border: solid black 3px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    width: 27.8vw;
+    position: absolute;
+    margin-left: 41.65vw;
+    margin-top: 38vh;
+    z-index: 100;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 400px;
+}
+
+#title_global_pop_up{
+    margin-left: 10.4vw;
+    min-width: 250px;
+}
+
+#text_global_pop_up{
+    margin-left: 1.39vw;
+    padding-bottom: 10px;
+    text-align: justify;
+    padding-right: 20px;
+    min-width: 360px;
+}
+
+
+#block_1{
+    width: 29vw;
+    height: 110vh;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 30px;
+    margin-top: 4.17vh;
+    margin-left: 1.39vh;
+    padding-right: 12px;
+    margin-bottom: 2.53vh;
+    min-width: 417px;
+    min-height: 867px;
+}
+
+#block_1 p{
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+
+#seccao_filtros{
+    width: 29.17vw;
+    height: 53.165vh;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding-left: 12px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 420px;
+    min-height: 419px;
+}
+
+#oq_deseja_ver{
+    text-align: center;
+    margin: auto;
+    min-width: 420px;
+    min-height: 26.9px;
+}
+
+#grafico_1_filtro_text{
+    position: absolute;
+    width: 10.417vw;
+    margin-top: -2.53vh;
+    min-width: 149.9px;
+    min-height: 74px;
+}
+
+#grafico_2_filtro_text{
+    text-align: center;
+    width: 10.417vw;
+    margin-left: 18.75vw;
+    position: absolute;
+    margin-top: -2.53vh;
+    min-width: 149.9px;
+    min-height: 74px;
+}
+
+#Primeira_linha{
+    display: block;
+}
+
+#Segunda_linha{
+    display: block;
+}
+
+#Terceira_linha{
+    display: block;
+}
+
+#Quarta_linha{
+    display: block;
+    width: fit-content;
+}
+
+#Submit_button{
+    background-color: rgb(27, 227, 169);
+    border-radius: 50%;
+    height: 5vh;
+    position: absolute;
+    margin-top: -5.7vh;
+    margin-left: 25vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 2vh;
+    cursor: pointer;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+#pais_grafico_1{
+    padding-right: 10px;
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    width: 13.8vw;
+}
+
+#casos_mortes_grafico_1{
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    width: 13.8vw;
+    padding-right: 10px;
+    min-width: 140px;
+    min-height: 45px;
+}
+
+#tipo_grafico_1{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+    min-width: 198px;
+    min-height: 45px;
+}
+
+#pais_grafico_2{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+}
+
+#casos_mortes_grafico_2{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+    min-width: 140px;
+    min-height: 45px;
+}
+
+#tipo_grafico_2{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+    min-width: 198px;
+    min-height: 45px;
+}
+
+#filtros_gerais_text{
+    display: inline-block;
+    position: relative;
+    margin-left: 6.94vw;
+    min-width: 198px;
+    min-height: 74px;
+}
+
+#escolha_data{
+    margin-left: 2.43vw;
+    margin-top: -1.267vh;
+    min-width: 315.9px;
+    min-height: 47.9px;
+}
+
+#top_3{
+    width: 30vw;
+    height: 53vh;
+    display: inline-block;
+    margin-top: 3.7vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 431.9px;
+    min-height: 418px;
+}
+
+#top3_global{
+    height: 53vh;
+    border-radius: 30px;
+    min-width: 431.9px;
+    min-height: 418px;
+}
+
+.resumo_geral{
+    display: inline-block;
+    margin-bottom: 2.53vh;
+    min-width: 960px;
+    min-height: 900px;
+}
+
+#resumo_casos{
+    width: 31.1vw;
+    height: 29.37vh;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin-top: 4.77vh;
+    margin-left: 1.39vw;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    vertical-align: top;
+    min-width: 447px;
+    min-height: 231px;
+}
+
+#icon_circle_casos{
+    width: 4.3vw;
+    height: 6.7vh;
+    background-color: rgb(255, 220, 0);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 0.76vw;
+    margin-top: 2.15vh;
+    min-width: 61.8px;
+    min-height: 52.7px;
+}
+
+#icon_casos{
+    width: 2.43vw;
+    height: 4.7vh;
+    margin-left: 1.8vw;
+    margin-top: 3.23vh;
+    position: absolute;
+    min-width: 34px;
+    min-height: 37px;
+}
+
+#casos_confirmados_text{
+    position: absolute;
+    margin-left: 5.5vw;
+    margin-top: 4.2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vh;
+    min-width: 201px;
+    min-height: 21.9px;
+}
+
+#acumulado_casos_text{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 17vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 179px;
+    min-height: 17.9px;
+}
+
+#novos_casos_text{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 20.80vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    min-width: 201px;
+    min-height: 17.9px;
+}
+
+#resumo_obitos{
+    width: 31.1vw;
+    height: 29.37vh;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin-top: 4.77vh;
+    margin-left: 3vw;
+    /*position: absolute;*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 447px;
+    min-height: 231px;
+}
+
+#icon_circle_obitos{
+    width: 4.3vw;
+    height: 6.7vh;
+    background-color: rgb(255, 72, 0);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 0.76vw;
+    margin-top: 2.15vh;
+    min-width: 61px;
+    min-height: 52px;
+}
+
+#icon_obitos{
+    width: 2.7vw;
+    height: 5vh;
+    margin-left: 1.6vw;
+    margin-top: 3vh;
+    position: absolute;
+    min-width: 38px;
+    min-height: 39px;
+}
+
+#obitos_confirmados{
+    position: absolute;
+    margin-left: 5.35vw;
+    margin-top: 4.2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vh;
+    min-width: 213px;
+    min-height: 21.9px;
+}
+
+#acumulado_obitos_text{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 16.45vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 170px;
+    min-height: 17.9px;
+}
+
+#letalidade_text{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 23.7vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 160px;
+    min-height: 17.9px;
+}
+
+#novos_obitos_text{
+    position: absolute;
+    display: block;
+    margin-left: 1.39vw;
+    margin-top: 20.25vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 198px;
+    min-height: 17.9px;
+}
+
+/* Gráfico 1 */
+#grafico-1{
+    width: 65.28vw;
+    height: 35.57vh;
+    margin-left: 1.39vw;
+    margin-top: 4.18vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 940px;
+    min-height: 280px;
+}
+
+/* Gráfico 2 */
+#grafico-2{
+    width: 65.28vw;
+    height: 35.57vh;
+    margin-left: 1.39vw;
+    margin-top: 4.18vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 940px;
+    min-height: 280px;
+}
+
+body{
+    background-color: #C5D5FD;
+    margin: 0;
+}
+/* Trabalhar layout do header e padding dos gráficos
+
+/* Secção para estilização da secção Referências */
+#logo_referencias_imagem{
+    margin-left: 46.5vw;
+    width: 7vw;
+    height: 12.65vh;
+    min-width: 68px;
+    min-height: 77px;
+}
+
+#section_referencias{
+    background-image: url("bg_referencias.jpg");
+    margin: auto;
+    width: 95.4vw;
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    height: 74vh;
+    margin-bottom: 2vh;
+    min-width: 932px;
+    min-height: 455px;
+}
+
+#referencias_text_block_1, #referencias_text_block_2, #referencias_text_block_3{
+    height: 21vh;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5vh;
+    min-width: 932px;
+    min-height: 129px;
+}
+
+#text_referencias_1, #text_referencias_2, #text_referencias_3{
+    margin-left: 2vw;
+    margin-right: 5vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#link_covid_global, #link_covid_brasil{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    color: blue;
+    text-decoration: none;  
+    margin-left: 5vw;
+}
+
+#link_covid_global:hover, #link_covid_brasil:hover{
+    color: rgb(23, 181, 209);
+}
+
+
+/* Sobre Nós Início */
+#sobre_nos_icon{
+    width: 10.5vw;
+    height: 12.7vh;
+    margin-left: 44.75vw;
+    min-width: 119px;
+    min-height: 81px;
+}
+
+#background_sobre_nos{
+    height: 74vh;
+    width: 95.4vw;
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    background-image: url("bg_sobre_nos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 3vh;
+    min-width: 1084px;
+    min-height: 475px;
+}
+
+#unb_gama{
+    display: inline-block;
+    margin-left: 1vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1.8vh 1vw 1.8vh 1vw;
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+#unb_gama img{
+    width: 14vw;
+    height: 19vh;
+    min-width: 159px;
+    min-height: 125px;
+}
+
+
+#slideshow-container{
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 41.7vw;
+    height: 40vh;
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 3.8vh;
+    display: inline-block;
+    margin-left: 10vw;
+    min-width: 474px;
+    min-height: 256px;
+}
+
+#unb{
+    display: inline-block;
+    margin-left: 7.64vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1.8vh 1vw 1.8vh 1vw;
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+#unb img{
+    width: 16vw;
+    height: 19vh;
+    min-width: 181px;
+    min-height: 125px;
+}
+
+#carrossel_imagem{
+    margin-top: 5vh;
+    margin-left: 3.5vw;
+    width: 34.7vw;
+    height: 29.7vh;
+    min-width: 394px;
+    min-height: 190px;
+}
+
+#sobre_nos_texto{
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 2vh;
+    min-width: 1084px;
+    min-height: 222px;
+}
+
+#sobre_nos_texto p{
+    margin-left: 27px;
+    margin-right: 100px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+}
+
+/* Dashboard Local */
+#pop_up_local_message{
+    background-color: white;
+    border: solid black 3px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    width: 27.8vw;
+    position: absolute;
+    margin-left: 41.65vw;
+    margin-top: 38vh;
+    z-index: 100;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 400px;
+}
+
+#title_local_pop_up{
+    margin-left: 10.4vw;
+    min-width: 250px;
+}
+
+#text_local_pop_up{
+    margin-left: 1.39vw;
+    padding-bottom: 10px;
+    text-align: justify;
+    padding-right: 20px;
+    min-width: 360px;
+}
+
+
+#block_1_local{
+    width: 29vw;
+    height: 110vh;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 30px;
+    margin-top: 4.17vh;
+    margin-left: 1.39vh;
+    padding-right: 12px;
+    margin-bottom: 2.53vh;
+    min-width: 417px;
+    min-height: 867px;
+}
+
+#block_1_local p{
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+
+#seccao_filtros_local{
+    width: 29.17vw;
+    height: 53.165vh;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding-left: 12px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 420px;
+    min-height: 419px;
+}
+
+#oq_deseja_ver_local{
+    text-align: center;
+    margin: auto;
+    min-width: 420px;
+    min-height: 26.9px;
+}
+
+#grafico_1_filtro_text_local{
+    position: absolute;
+    width: 10.417vw;
+    margin-top: -2.53vh;
+    min-width: 149.9px;
+    min-height: 74px;
+}
+
+#grafico_2_filtro_text_local{
+    text-align: center;
+    width: 10.417vw;
+    margin-left: 18.75vw;
+    position: absolute;
+    margin-top: -2.53vh;
+    min-width: 149.9px;
+    min-height: 74px;
+}
+
+#Primeira_linha_local{
+    display: block;
+}
+
+#Segunda_linha_local{
+    display: block;
+}
+
+#Terceira_linha_local{
+    display: block;
+}
+
+#Quarta_linha_local{
+    display: block;
+    width: fit-content;
+}
+
+#Submit_button_local{
+    background-color: rgb(27, 227, 169);
+    border-radius: 50%;
+    height: 5vh;
+    position: absolute;
+    margin-top: -5.7vh;
+    margin-left: 25vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 2vh;
+    cursor: pointer;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+#pais_grafico_1_local{
+    padding-right: 10px;
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    width: 13.8vw;
+}
+
+#casos_mortes_grafico_1_local{
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    width: 13.8vw;
+    padding-right: 10px;
+    min-width: 140px;
+    min-height: 45px;
+}
+
+#tipo_grafico_1_local{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+    min-width: 198px;
+    min-height: 45px;
+}
+
+#pais_grafico_2_local{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+}
+
+#casos_mortes_grafico_2_local{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+    min-width: 140px;
+    min-height: 45px;
+}
+
+#tipo_grafico_2_local{
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    width: 13.8vw;
+    min-width: 198px;
+    min-height: 45px;
+}
+
+#filtros_gerais_text_local{
+    display: inline-block;
+    position: relative;
+    margin-left: 6.94vw;
+    min-width: 198px;
+    min-height: 74px;
+}
+
+#escolha_data_local{
+    margin-left: 2.43vw;
+    margin-top: -1.267vh;
+    min-width: 315.9px;
+    min-height: 47.9px;
+}
+
+#top_3_local{
+    width: 30vw;
+    height: 53vh;
+    display: inline-block;
+    margin-top: 3.7vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 431.9px;
+    min-height: 418px;
+}
+
+#top3_local{
+    height: 53vh;
+    border-radius: 30px;
+    min-width: 431.9px;
+    min-height: 418px;
+}
+
+.resumo_geral_local{
+    display: inline-block;
+    margin-bottom: 2.53vh;
+    min-width: 960px;
+    min-height: 900px;
+}
+
+#resumo_casos_local{
+    width: 31.1vw;
+    height: 29.37vh;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin-top: 4.77vh;
+    margin-left: 1.39vw;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    vertical-align: top;
+    min-width: 447px;
+    min-height: 231px;
+}
+
+#icon_circle_casos_local{
+    width: 4.3vw;
+    height: 6.7vh;
+    background-color: rgb(255, 220, 0);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 0.76vw;
+    margin-top: 2.15vh;
+    min-width: 61.8px;
+    min-height: 52.7px;
+}
+
+#icon_casos_local{
+    width: 2.43vw;
+    height: 4.7vh;
+    margin-left: 1.8vw;
+    margin-top: 3.23vh;
+    position: absolute;
+    min-width: 34px;
+    min-height: 37px;
+}
+
+#casos_confirmados_text_local{
+    position: absolute;
+    margin-left: 5.5vw;
+    margin-top: 4.2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vh;
+    min-width: 201px;
+    min-height: 21.9px;
+}
+
+#acumulado_casos_text_local{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 17vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 179px;
+    min-height: 17.9px;
+}
+
+#novos_casos_text_local{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 20.80vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    min-width: 201px;
+    min-height: 17.9px;
+}
+
+#resumo_obitos_local{
+    width: 31.1vw;
+    height: 29.37vh;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin-top: 4.77vh;
+    margin-left: 3vw;
+    /*position: absolute;*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 447px;
+    min-height: 231px;
+}
+
+#icon_circle_obitos_local{
+    width: 4.3vw;
+    height: 6.7vh;
+    background-color: rgb(255, 72, 0);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 0.76vw;
+    margin-top: 2.15vh;
+    min-width: 61px;
+    min-height: 52px;
+}
+
+#icon_obitos_local{
+    width: 2.7vw;
+    height: 5vh;
+    margin-left: 1.6vw;
+    margin-top: 3vh;
+    position: absolute;
+    min-width: 38px;
+    min-height: 39px;
+}
+
+#obitos_confirmados_local{
+    position: absolute;
+    margin-left: 5.35vw;
+    margin-top: 4.2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vh;
+    min-width: 213px;
+    min-height: 21.9px;
+}
+
+#acumulado_obitos_text_local{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 16.45vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 170px;
+    min-height: 17.9px;
+}
+
+#letalidade_text_local{
+    position: absolute;
+    margin-left: 1.39vw;
+    margin-top: 23.7vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 160px;
+    min-height: 17.9px;
+}
+
+#novos_obitos_text_local{
+    position: absolute;
+    display: block;
+    margin-left: 1.39vw;
+    margin-top: 20.25vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    min-width: 198px;
+    min-height: 17.9px;
+}
+
+/* Gráfico 1 */
+#grafico-1_local{
+    width: 65.28vw;
+    height: 35.57vh;
+    margin-left: 1.39vw;
+    margin-top: 4.18vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 940px;
+    min-height: 280px;
+}
+
+/* Gráfico 2 */
+#grafico-2_local{
+    width: 65.28vw;
+    height: 35.57vh;
+    margin-left: 1.39vw;
+    margin-top: 4.18vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+    min-width: 940px;
+    min-height: 280px;
+}
